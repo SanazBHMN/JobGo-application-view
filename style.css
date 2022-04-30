@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
+  --color-primary: #f9f9f9;
+  --color-secondary: #29abe2;
   --color-neutral: #797979;
   --border-color: #dde3e8;
+  --text-white: #ffffff;
 }
 
 * {
@@ -18,6 +21,7 @@ body {
 aside {
   width: 392px;
   border: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--color-secondary);
   border-radius: 4px;
 }
 
@@ -42,7 +46,7 @@ aside {
 
 /* profile details */
 .profile-details {
-  padding: 24px 0 24px 24px;
+  padding: 24px 0 0 24px;
 }
 
 .user-info {
@@ -60,4 +64,30 @@ aside {
 
 .data {
   grid-column: 2 / 3;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+}
+
+#send-msg,
+#download {
+  display: block;
+  padding: 9px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+#send-msg {
+  background-color: var(--color-primary);
+}
+
+#download {
+  margin-left: 24px;
+  background-color: var(--color-secondary);
+  color: var(--text-white);
 }
