@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@400;700&display=swap");
 
 :root {
   --color-primary: #f9f9f9;
   --color-secondary: #29abe2;
   --color-neutral: #797979;
   --border-color: #dde3e8;
+  --text-primary: #2c3547;
   --text-white: #ffffff;
 }
 
@@ -40,6 +41,7 @@ aside {
 }
 
 .profile small {
+  font-family: "Open Sans", sans-serif;
   color: var(--color-neutral);
   margin: 2px 0 10px;
 }
@@ -53,6 +55,12 @@ aside {
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 .icon {
@@ -64,6 +72,9 @@ aside {
 
 .data {
   grid-column: 2 / 3;
+  font-weight: 400;
+  color: var(--color-neutral);
+  margin-top: 10px;
 }
 
 .actions {
