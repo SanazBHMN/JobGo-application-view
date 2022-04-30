@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --color-neutral: #797979;
+  --border-color: #dde3e8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+aside {
+  width: 20%;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* profile */
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 24px;
+}
+
+.profile img {
+  margin-bottom: 22px;
+}
+
+.profile small {
+  color: var(--color-neutral);
+  margin: 2px 0 10px;
+}
