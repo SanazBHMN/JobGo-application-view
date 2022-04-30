@@ -42,26 +42,22 @@ aside {
 
 /* profile details */
 .profile-details {
-  padding-left: 24px;
   padding: 24px 0 24px 24px;
 }
 
 .user-info {
   margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 100%;
 }
 
-.headline {
-  /* background-color: green; */
-  display: flex;
-}
-
-.headline .icon {
-  margin-right: 16px;
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 16px;
 }
 
 .data {
-  margin-left: 30px;
+  grid-column: 2 / 3;
 }
