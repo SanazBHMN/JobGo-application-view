@@ -19,8 +19,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* layout */
+.content {
+  display: grid;
+  grid-template-columns: 392px 1fr;
+  grid-gap: 22px;
+  margin: 3rem;
+}
+
 aside {
-  width: 392px;
+  /* width: 392px; */
   border: 2px solid var(--border-color);
   border-bottom: 2px solid var(--color-secondary);
   border-radius: 4px;
@@ -101,4 +109,10 @@ aside {
   margin-left: 24px;
   background-color: var(--color-secondary);
   color: var(--text-white);
+}
+
+/* main */
+main {
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
 }
